@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/gallery.js"],"names":[],"mappings":"4FAAA,4CAGe,4BACb,kBAAC,UAAD","file":"component---src-pages-gallery-js-fe4b7360f062e7b6cc1c.js","sourcesContent":["import React from \"react\";\nimport GalleryPage from \"./GalleryPage/GalleryPage\";\n\nexport default () => (\n  <GalleryPage/>\n);\n"],"sourceRoot":""}
