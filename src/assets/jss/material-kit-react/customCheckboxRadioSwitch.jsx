@@ -149,7 +149,7 @@ const customCheckboxRadioSwitch = {
     transform: "translateX(-4px)!important"
   },
   switchIconChecked: {
-    borderColor: "#9c27b0",
+    borderColor: "#424242",
     transform: "translateX(0px)!important"
   },
   switchBar: {
@@ -161,7 +161,7 @@ const customCheckboxRadioSwitch = {
   },
   switchChecked: {
     "& + $switchBar": {
-      backgroundColor: "rgba(156, 39, 176, 1) !important"
+      backgroundColor: "rgba(66, 66, 66, 1) !important"
     }
   }
 };

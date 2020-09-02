@@ -4,9 +4,9 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import Person from "@material-ui/icons/Person";
+import Places from "@material-ui/icons/Landscape";
+import Things from "@material-ui/icons/Devices";
 // React icons
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 // core components
@@ -19,18 +19,25 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/shane.jpg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import people1 from "assets/img/examples/people/DSC00424.jpg";
+import people2 from "assets/img/examples/people/DSC00949.jpg";
+import people3 from "assets/img/examples/people/DSC01744-Edit.jpg";
+import people4 from "assets/img/examples/people/DSC04465.jpg";
+import people5 from "assets/img/examples/people/DSC05921.jpg";
+import people6 from "assets/img/examples/people/DSC04419.jpg";
+import places1 from "assets/img/examples/places/DSC00297.jpg";
+import places2 from "assets/img/examples/places/DSC00356-Edit.jpg";
+import places3 from "assets/img/examples/places/DSC02995-Edit.jpg";
+import places4 from "assets/img/examples/places/DSC05366.jpg";
+import places5 from "assets/img/examples/places/DSC09707.jpg";
+import places6 from "assets/img/examples/places/DSC06261.jpg";
+import things1 from "assets/img/examples/things/DSC02510.jpg";
+import things2 from "assets/img/examples/things/DSC02648.jpg";
+import things3 from "assets/img/examples/things/DSC00392full.jpg";
+import things4 from "assets/img/examples/things/IMG_7613.jpg";
+import things5 from "assets/img/examples/things/IMG_7546.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
@@ -47,7 +54,7 @@ class ProfilePage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Material Kit React"
+          brand="Shane Stockall"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -56,7 +63,7 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+        <Parallax small filter image={require("assets/img/examples/places/DSC05377.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
@@ -67,15 +74,15 @@ class ProfilePage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Christian Louboutin</h3>
-                      <h6>DESIGNER</h6>
-                      <Button justIcon link className={classes.margin5}>
+                      <h3 className={classes.title}>Shane Stockall</h3>
+                      <h6>Developer • Photographer • Human</h6>
+                      <Button href='https://www.twitter.com/shanestockall' target='_blank' justIcon link className={classes.margin5}>
                         <FaTwitter/>
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
+                      <Button href='https://www.instagram.com/shanestockall' target='_blank' justIcon link className={classes.margin5}>
                         <FaInstagram/>
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
+                      <Button href='https://www.facebook.com/shane.stockall' target='_blank' justIcon link className={classes.margin5}>
                         <FaFacebook/>
                       </Button>
                     </div>
@@ -84,10 +91,7 @@ class ProfilePage extends React.Component {
               </GridContainer>
               <div className={classes.description}>
                 <p>
-                  An artist of considerable range, Chet Faker — the name taken
-                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure.{" "}
+                  I'm a full-time software engineer who enjoys taking photos on the side. Below, you'll find a small sample of my work. For my full portfolio, visit my gallery.
                 </p>
               </div>
               <GridContainer justify="center">
@@ -97,31 +101,43 @@ class ProfilePage extends React.Component {
                     color="primary"
                     tabs={[
                       {
-                        tabButton: "Studio",
-                        tabIcon: Camera,
+                        tabButton: "People",
+                        tabIcon: Person,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={studio1}
+                                src={people1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio2}
+                                src={people2}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={studio5}
+                                src={people3}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio4}
+                                src={people4}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                              <img
+                                alt="..."
+                                src={people5}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={people6}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -129,36 +145,41 @@ class ProfilePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Work",
-                        tabIcon: Palette,
+                        tabButton: "Places",
+                        tabIcon: Places,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work1}
+                                src={places1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work2}
+                                src={places2}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work3}
+                                src={places3}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={places4}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work5}
+                                src={places5}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={places6}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -166,36 +187,36 @@ class ProfilePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Favorite",
-                        tabIcon: Favorite,
+                        tabButton: "Things",
+                        tabIcon: Things,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={things1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio3}
+                                src={things2}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={things3}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work1}
+                                src={things4}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio1}
+                                src={things5}
                                 className={navImageClasses}
                               />
                             </GridItem>

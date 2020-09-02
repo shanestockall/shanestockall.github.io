@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "shanestockall-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Photography portfolio built with Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -37,7 +38,10 @@
     "react-helmet": "^5.2.0",
     "react-icon": "^1.0.0",
     "react-icons": "^3.5.0",
+    "react-images": "^1.1.7",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^4.3.1",
+    "react-scrollspy": "^3.4.3",
     "react-slick": "^0.23.2",
     "react-swipeable-views": "^0.13.1",
     "typeface-roboto": "0.0.54",
@@ -48,9 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/shanestockall/shanestockall.github.io"
   }
 }

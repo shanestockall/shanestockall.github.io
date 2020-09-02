@@ -28,53 +28,45 @@ function Footer({ ...props }) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/"
+                href="/"
                 className={classes.block}
-                target="_blank"
               >
-                Creative Tim
+                Shane Stockall
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation"
+                href="/about"
                 className={classes.block}
-                target="_blank"
               >
-                About us
+                About Me
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/"
+                href="/gallery"
                 className={classes.block}
-                target="_blank"
               >
-                Blog
+                Gallery
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/license"
+                href="/contact"
                 className={classes.block}
-                target="_blank"
               >
-                Licenses
+                Contact
               </a>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+          <a href="mailto:shanestockall@gmail.com">
+            All photos and this website made by me. 
+          </a>
+          <p>
+            Built with GatsbyJS.
+          </p>
         </div>
       </div>
     </footer>

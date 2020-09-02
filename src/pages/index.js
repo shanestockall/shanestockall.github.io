@@ -6,20 +6,20 @@ import "assets/scss/material-kit-react.scss?v=1.4.0";
 import 'typeface-roboto';
 import 'typeface-roboto-slab';
 // pages for this product
-import Components from "./Components/Components.jsx";
-import LandingPage from "./LandingPage/LandingPage.jsx";
+import Root from "./Root/Root.jsx";
 import ProfilePage from "./ProfilePage/ProfilePage.jsx";
-import LoginPage from "./LoginPage/LoginPage.jsx";
+import ContactPage from "./ContactPage/ContactPage.jsx";
+import GalleryPage from "./GalleryPage/GalleryPage.jsx";
 
 let hist = createMemoryHistory();
 
 export default () => (
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
+      <Route path="/contact" component={ContactPage} />
+      <Route path="/about" component={ProfilePage} />
+      <Route path="/gallery" component={GalleryPage} />
+      <Route path="/" component={Root} />
     </Switch>
   </Router>
 );
