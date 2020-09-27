@@ -17,7 +17,7 @@ import Gallery from "components/Gallery/Gallery.jsx";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
-class ProfilePage extends React.Component {
+class GalleryPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -43,7 +43,7 @@ class ProfilePage extends React.Component {
           <div>
             <div className={classes.container}>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={6}>
+                <GridItem xs={12} sm={12} md={12}>
                   <div className={classes.profile}>
                     <div>
                       <img src={profile} alt="..." className={imageClasses} />
@@ -53,7 +53,9 @@ class ProfilePage extends React.Component {
                       <h6>Gallery</h6>
                     </div>
                   </div>
+                  <div id="photo-gallery">
                   <Gallery />
+                  </div>
                 </GridItem>
               </GridContainer>
             </div>
@@ -65,4 +67,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(ProfilePage);
+export default withStyles(profilePageStyle)(GalleryPage);

@@ -19,7 +19,7 @@ import profile from "assets/img/faces/shane.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
-class ProfilePage extends React.Component {
+class ContactPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -88,4 +88,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(ProfilePage);
+export default withStyles(profilePageStyle)(ContactPage);

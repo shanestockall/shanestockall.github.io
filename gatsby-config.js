@@ -6,9 +6,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
