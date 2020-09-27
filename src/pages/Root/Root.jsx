@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -23,6 +24,11 @@ class Components extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Shane Stockall Photography</title>
+          <link rel="canonical" href="https://shanestockall.github.io" />
+        </Helmet>
         <Header
           brand="Shane Stockall"
           rightLinks={<HeaderLinks />}

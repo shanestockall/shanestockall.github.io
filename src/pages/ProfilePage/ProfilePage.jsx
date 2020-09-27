@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -52,6 +53,10 @@ class ProfilePage extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>About Me</title>
+        </Helmet>
         <Header
           color="transparent"
           brand="Shane Stockall"

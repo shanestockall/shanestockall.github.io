@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -26,7 +27,11 @@ class GalleryPage extends React.Component {
       classes.imgFluid
     );
     return (
-<div>
+      <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Gallery</title>
+        </Helmet>
         <Header
           color="transparent"
           brand="Shane Stockall"

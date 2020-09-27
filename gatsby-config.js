@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
